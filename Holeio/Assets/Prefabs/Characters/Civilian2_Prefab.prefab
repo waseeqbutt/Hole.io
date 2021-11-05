@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 4229981780046847561}
   - component: {fileID: 4229981780046847562}
   - component: {fileID: 4229981780046847563}
-  - component: {fileID: 4229981780046847564}
+  - component: {fileID: 1705245811392543475}
+  - component: {fileID: 85132427729523932}
   m_Layer: 8
   m_Name: Civilian2_Prefab
   m_TagString: Human
@@ -64,7 +65,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!114 &4229981780046847564
+--- !u!114 &1705245811392543475
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -73,12 +74,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 4229981780046847560}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51b47dab6882c504abffb0f875e081a4, type: 3}
+  m_Script: {fileID: 11500000, guid: da22582d3ea08354885fbb32f4a84a08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   state: 0
   walkSpeed: 5
   animator: {fileID: 2320586984988827333}
+--- !u!114 &85132427729523932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4229981780046847560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 537799ae018a13c48974fba3ae3888df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: -20
+  soundFX: {fileID: 8300000, guid: af13ea8e1ef313e4fa494477b5a68c5d, type: 3}
 --- !u!1001 &2320586984981506981
 PrefabInstance:
   m_ObjectHideFlags: 0

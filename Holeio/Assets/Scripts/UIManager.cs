@@ -9,7 +9,10 @@ namespace vasik
     public class UIManager : MonoBehaviour
     {
         public RectTransform scorePanel;
+        public TMPro.TextMeshProUGUI totalScoreText;
         public Text scorePopUpPrefab;
+
+        private int totalScore = 0;
 
         public void ShowScore(int score)
         {
@@ -30,6 +33,14 @@ namespace vasik
                 txt.text = score.ToString();
                 txt.color = Color.red;
             }
+
+            totalScore += score;
+            totalScoreText.text = totalScore.ToString();
+
+            if (totalScore < 0)
+                totalScoreText.color = Color.red;
+            else
+                totalScoreText.color = Color.white;
         }
     }
 

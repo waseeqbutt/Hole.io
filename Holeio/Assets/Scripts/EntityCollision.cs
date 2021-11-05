@@ -23,6 +23,7 @@ namespace vasik
         private void OnTriggerEnter(Collider other)
         {
             entity = other.GetComponent<Entity>();
+            entity.StartCoroutine(entity.Respawn());
             audioSource.PlayOneShot(entity.soundFX, 1.0f);
             ShowScore(entity.score);
         }

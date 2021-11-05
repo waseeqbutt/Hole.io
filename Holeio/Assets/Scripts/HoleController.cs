@@ -50,7 +50,7 @@ namespace vasik
         {
             if(Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer)
             {
-        //        MobileControl();
+                MobileControl();
             }
             else
             {
@@ -67,11 +67,18 @@ namespace vasik
 
                 for (int i = 0; i < holeVertices.Count; i++)
                 {
+                    //Vector3[] vertices = mesh.vertices;
+                    //vertices[holeVertices[i]] = new Vector3(vertices[holeVertices[i]].x - touchX * (speed * Time.deltaTime),
+                    //    vertices[holeVertices[i]].y + touchY * ((speed / 2f) * Time.deltaTime), vertices[holeVertices[i]].z);
+
                     Vector3[] vertices = mesh.vertices;
                     vertices[holeVertices[i]] = new Vector3(vertices[holeVertices[i]].x - touchX * (speed * Time.deltaTime),
-                        vertices[holeVertices[i]].y + touchY * ((speed / 2f) * Time.deltaTime), vertices[holeVertices[i]].z);
+                        vertices[holeVertices[i]].y + touchY * (speed * Time.deltaTime), vertices[holeVertices[i]].z);
 
                     mesh.vertices = vertices;
+
+                    holeCenter.position = new Vector3(holeCenter.position.x - touchX * ((speed / centerSpeedRatio) * Time.deltaTime),
+                    holeCenter.position.y, holeCenter.position.z - touchY * ((speed / centerSpeedRatio) * Time.deltaTime));
                 }
             }
         }

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 894990046238909843}
   - component: {fileID: 4649564689525860239}
   - component: {fileID: 6186823841580922601}
+  - component: {fileID: -3618085905407956650}
   m_Layer: 8
   m_Name: Stone3_Prefab
   m_TagString: Untagged
@@ -110,3 +111,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-3618085905407956650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 881928259195676211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 537799ae018a13c48974fba3ae3888df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 1
+  soundFX: {fileID: 8300000, guid: 9b3fb5cfe1e6da44aa985530f17f17d3, type: 3}

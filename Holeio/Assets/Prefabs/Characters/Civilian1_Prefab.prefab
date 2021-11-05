@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 420904704896625573}
   - component: {fileID: 420904704896625574}
   - component: {fileID: 420904704896625575}
-  - component: {fileID: 420904704896625568}
+  - component: {fileID: 5657670897856107694}
+  - component: {fileID: 552508745064044384}
   m_Layer: 8
   m_Name: Civilian1_Prefab
   m_TagString: Human
@@ -26,7 +27,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 420904704896625572}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 8.81, y: 3.7229817, z: 3.42}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children:
@@ -64,7 +65,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!114 &420904704896625568
+--- !u!114 &5657670897856107694
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -73,12 +74,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 420904704896625572}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51b47dab6882c504abffb0f875e081a4, type: 3}
+  m_Script: {fileID: 11500000, guid: da22582d3ea08354885fbb32f4a84a08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   state: 0
-  walkSpeed: 5
+  walkSpeed: 2
   animator: {fileID: 420904704745946681}
+--- !u!114 &552508745064044384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 420904704896625572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 537799ae018a13c48974fba3ae3888df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: -15
+  soundFX: {fileID: 8300000, guid: af13ea8e1ef313e4fa494477b5a68c5d, type: 3}
 --- !u!1001 &420904704738642777
 PrefabInstance:
   m_ObjectHideFlags: 0

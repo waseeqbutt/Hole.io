@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 2958389764823430580}
   - component: {fileID: 2958389764823430583}
   - component: {fileID: 2958389764823430582}
-  - component: {fileID: 2958389764823430569}
+  - component: {fileID: 8466463145334635809}
+  - component: {fileID: -6519609202394861039}
   m_Layer: 8
   m_Name: Zombie_Prefab
   m_TagString: Enemy
@@ -64,7 +65,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!114 &2958389764823430569
+--- !u!114 &8466463145334635809
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -73,12 +74,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 2958389764823430568}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf7b1de2537c44444bc4c391396b3e70, type: 3}
+  m_Script: {fileID: 11500000, guid: da22582d3ea08354885fbb32f4a84a08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   state: 0
-  walkSpeed: 3
+  walkSpeed: 2
   animator: {fileID: 2958389765042875647}
+--- !u!114 &-6519609202394861039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2958389764823430568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 537799ae018a13c48974fba3ae3888df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 10
+  soundFX: {fileID: 8300000, guid: af13ea8e1ef313e4fa494477b5a68c5d, type: 3}
 --- !u!1001 &2958389765035579807
 PrefabInstance:
   m_ObjectHideFlags: 0
